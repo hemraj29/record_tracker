@@ -1,3 +1,33 @@
+## User Authentication
+
+For user authentication, the app uses the data obtained from the API. The structure of the user object is as follows:
+
+```json
+{
+  "id": 1,
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "gender": "male",
+  "employmentStatus": "Full-Time"
+  // ... other user properties
+}
+
+Username: The user's first name is used as the username.
+Password: The user's email address is used as the password.
+When logging in, the app checks for a match between the entered username (first name) and password (email) with the data obtained from the API.
+
+
+
+
+
+
+
+
+
+
+
+              
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -6,65 +36,58 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# My Dashboard App
 
-### `npm test`
+This is a simple dashboard app built with React. The app includes features such as user login, a navigation bar, and a main dashboard with a pie chart.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To run this app locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/hemraj29/record_tracker.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+   Features
+User login functionality.
+Main dashboard with a navigation bar.
+Pie chart displaying gender and employment data.
+Technologies Used
+React
+React Router
+Chart.js
+Folder Structure
+src/ - Contains the source code of the React app.
+components/ - React components.
+context/ - User context and provider.
+App.js - Main entry point of the app.
+Contributing
+Contributions are welcome! If you find a bug or have a feature request, please open an issue.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+{
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+API USED == https://dummyjson.com/users
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+IMPORTANT INFORMATION ----> 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+THIS IS SAMPLE JSON DATA IN PROJECT 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+in LOGIN FROM -- firstName  of api data --> treated as UserName 
+              -- email is used for authentication (Password)
 
-### Advanced Configuration
+{"id":1,"firstName":"Terry","lastName":"Medhurst","maidenName":"Smitham","age":50,"gender":"male","email":"atuny0@sohu.com","phone":"+63 791 675 8914","username":"atuny0","password":"9uQFF1Lh","birthDate":"2000-12-25","image":"https://robohash.org/hicveldicta.png","bloodGroup":"A−","height":189,"weight":75.4,"eyeColor":"Green","hair":{"color":"Black","type":"Strands"},"domain":"slashdot.org","ip":"117.29.86.254","address":{"address":"1745 T Street Southeast","city":"Washington","coordinates":{"lat":38.867033,"lng":-76.979235},"postalCode":"20020","state":"DC"},"macAddress":"13:69:BA:56:A3:74","university":"Capitol University","bank":{"cardExpire":"06/22","cardNumber":"50380955204220685","cardType":"maestro","currency":"Peso","iban":"NO17 0695 2754 967"},"company":{"address":{"address":"629 Debbie Drive","city":"Nashville","coordinates":{"lat":36.208114,"lng":-86.58621199999999},"postalCode":"37076","state":"TN"},"department":"Marketing","name":"Blanda-O'Keefe","title":"Help Desk Operator"},"ein":"20-9487066","ssn":"661-64-2976","userAgent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/12.0.702.0 Safari/534.24"},
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
