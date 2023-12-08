@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+
+}
+.SideBar {
+    height: calc(100vh - 100px); /* Adjust 60px based on the actual height of your navbar */
+    width: 10%;
+    background-color: rgb(233, 233, 141);
+    margin: 2px;
+}
+
+.pie-container {
+    height: calc(100vh -40px);
+    margin: 25px;
+    width: 88%;
+    background-color: rgb(114, 112, 123);
+}

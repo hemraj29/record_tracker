@@ -1,0 +1,37 @@
+.navbar {
+    width: 100vw;
+    height: 90px;
+    background-color: rgb(119, 111, 111);
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-style: italic;
+    background-color: rgb(215, 215, 84);
+    border-radius: 30px;
+}
+
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    margin-right: 20px;
+}
+
+.button {
+    background-color: blueviolet;
+      
+    color: antiquewhite;
+}
+
+.logout {
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: azure;
+    border: none;
+    height: 40px;
+    gap: 10px;
+}
+
